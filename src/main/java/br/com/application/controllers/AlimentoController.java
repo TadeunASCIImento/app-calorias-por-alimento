@@ -32,7 +32,7 @@ public class AlimentoController {
 		try {
 			modelAndView.addObject("alimentos", restTamplate.getForObject(uri + descricao, ArrayList.class));
 		} catch (HttpClientErrorException exception) {
-			return new ModelAndView("redirect:/alimentos/formulario");
+			return new ModelAndView("redirect:/alimentos/");
 		}
 		return modelAndView;
 	}
