@@ -30,8 +30,7 @@ public class AlimentoController {
 	public ModelAndView filtrar(@RequestParam(value = "descricao", required = false) String descricao) {
 		ModelAndView modelAndView = new ModelAndView("index");
 		try {
-			ArrayList<?> response = restTamplate.getForObject(uri + descricao, ArrayList.class);
-			modelAndView.addObject("alimentos", response);
+			modelAndView.addObject("alimentos", restTamplate.getForObject(uri + descricao, ArrayList.class));
 		} catch (HttpClientErrorException exception) {
 			return new ModelAndView("redirect:/alimentos/formulario");
 		}
