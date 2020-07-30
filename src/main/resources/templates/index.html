@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="description"
+	content="Descubra a quantidade de calorias nos alimentos que você consome" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<title>app calorias por alimento</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h2>
+				<b>DESCUBRA A QUANTIDADE DE CALORIAS DOS ALIMENTOS QUE VOCÊ
+					CONSOME!</b>
+			</h2>
+		</header>
+		<form method="GET" th:action="@{/alimentos/filtrar}">
+			<div class="form-inline">
+				<label><b>INFORME UM ALIMENTO PARA BUSCA</b> </label> <input
+					type="text" th:name="descricao" id="descricao"
+					class="form form-control"> <input type="submit"
+					value="Buscar" id="btn-buscar"> <input onclick="limpar();"
+					type="button" value="Limpar" id="btn-limpar">
+			</div>
+		</form>
+		<table id="tabela" class="table table-">
+			<thead>
+				<tr>
+					<th class="th-descricao">DESCRIÇÃO DO ALIMENTO</th>
+					<th class="th-quantidade">QUANTIDADE</th>
+					<th class="th-calorias">VALOR CALÓRICO</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="tr-alimento" th:each="alimento:${alimentos}">
+					<td class="td-descricao" th:text="${alimento.descricao}"></td>
+					<td class="td-quantidade" th:text="${alimento.quantidade}"></td>
+					<td class="td-calorias" th:text="${alimento.calorias}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<footer class="footer">
+		<a href="#">
+			<img src="/imagens/icone-github.png" class="icone-github" />
+		</a> <a
+			href="#">
+			<img src="/imagens/icone-bitbucket.png" class="icone-bitbucket" />
+		</a> <a href="mailto:tadeunascimentosp@gmail.com"> <img
+			src="/imagens/icone-email.png" class="icone-email" />
+		</a> <a href="https://linkedin.com/in/tadeu-do-nascimento"> <img
+			src="/imagens/icone-linkedin.png" class="icone-linkedin" />
+
+		</a>
+		<p class="parag-foot">Desenvolvido por Tadeu do Nascimento &copy;
+			2020</p>
+	</footer>
+	<script type="text/javascript">
+     function limpar(){
+    	 var tabela = document.getElementById("tabela");
+    	 var descricao = document.getElementById("descricao");
+    	 tabela.textContent = "";
+    	 descricao.textContent = "";
+        }
+	</script>
+</body>
+</html>

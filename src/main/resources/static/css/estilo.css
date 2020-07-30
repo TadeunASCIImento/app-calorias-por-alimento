@@ -1,0 +1,80 @@
+@charset "ISO-8859-1";
+
+* {
+	font-family: monospace;
+}
+header {
+	margin-top: 40px;
+}
+
+h2 {
+	margin: 70px 0px 40px 0px;
+	color: #847577;
+	text-align: center;
+}
+
+.td-calorias, .th-calorias {
+	text-align: center;
+}
+
+thead {
+	color: #847577;
+}
+
+label {
+	color: #847577;
+	font-size: 1.2em;
+	margin: 10px 5px 0px 0px;
+}
+
+#descricao {
+	width: 400px;
+	height: 40px;
+	font-size: 1.3em;
+	margin: 10px 10px 0px 0px;
+}
+
+table {
+	font-size: 1.2em;
+}
+
+#tr-alimento {
+	font-size: 1em;
+}
+
+#btn-buscar, #btn-limpar {
+	background-color: #ff8552;
+	width: 150px;
+	height: 40px;
+	font-size: 1.4em;
+	border: none;
+	margin: 10px 5px 0px 0px;
+	color: whitesmoke;
+}
+
+#btn-limpar {
+	background-color: #297373;
+}
+
+form {
+	margin: 60px 0px 10px 0px;
+}
+
+.icone-github, .icone-linkedin, .icone-bitbucket {
+	margin: 20px 0px 0px 0px;
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+}
+
+.icone-email {
+	margin-top: 20px;
+	width: 45px;
+	height: 45px;
+	width: 45px;
+}
+
+.footer {
+	margin: 250px 0px 0px 0px;
+	text-align: center;
+}
