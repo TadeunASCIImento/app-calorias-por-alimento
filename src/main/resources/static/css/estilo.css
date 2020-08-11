@@ -60,7 +60,8 @@ form {
 	margin: 60px 0px 10px 0px;
 }
 
-.icone-email, .icone-github, .icone-linkedin, .icone-bitbucket {
+.icone-email, .icone-github, 
+.icone-linkedin, .icone-bitbucket {
 	margin: 20px 0px 0px 10px;
 	width: 30px;
 	height: 30px;
@@ -70,10 +71,6 @@ form {
 	margin: 20px 0px 0px 10px;
 	width: 32px;
 	height: 32px;
-}
-
-.icone-linkedin, .icone-bitbucket {
-	border-radius: 5px;
 }
 
 .footer {
