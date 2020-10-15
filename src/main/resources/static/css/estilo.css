@@ -28,7 +28,7 @@ label {
 }
 
 #descricao {
-	width: 400px;
+	width: 350px;
 	height: 40px;
 	font-size: 1.3em;
 	margin: 10px 10px 0px 0px;
@@ -44,7 +44,7 @@ table {
 
 #btn-buscar, #btn-limpar {
 	background-color: #ff8552;
-	width: 197px;
+	width: 190px;
 	height: 40px;
 	font-size: 1.4em;
 	border: none;
@@ -60,18 +60,13 @@ form {
 	margin: 60px 0px 10px 0px;
 }
 
-.icone-email, .icone-github, 
-.icone-linkedin, .icone-bitbucket {
+.icone-email,
+.icone-github,
+.icone-linkedin,
+.icone-bitbucket {
 	margin: 20px 0px 0px 10px;
-	width: 30px;
-	height: 30px;
 }
 
-.icone-email {
-	margin: 20px 0px 0px 10px;
-	width: 32px;
-	height: 32px;
-}
 
 .footer {
 	margin: 200px 0px 0px 0px;
